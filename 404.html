@@ -1,10 +1,10 @@
 <script>
     // Check if you are inside the links page.
-    var InsidePage = !!window.locate.href.split("/")[3];
+    var InsidePage = !!window.locate.href.split("/")[4];
     var PageName = null;
     if (InsidePage) {
         // Get the PageName.
-        PageName = window.locate.href.split("/")[3];
+        PageName = window.locate.href.split("/")[4];
     }
     if (InsidePage) {
         document.writeln("Current page is: /" + PageName);
