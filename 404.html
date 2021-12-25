@@ -1,5 +1,15 @@
-Hello Lynku!
-Babu is hagu
-Naam kya haitumhara
-Biwani sir jindabad
-HDFC pension plan
+<script>
+    // Check if you are inside the links page.
+    var InsidePage = !!window.locate.href.split("/")[3];
+    var PageName = null;
+    if (InsidePage) {
+        // Get the PageName.
+        PageName = window.locate.href.split("/")[3];
+    }
+    if (InsidePage) {
+        document.writeln("Current page is: /" + PageName);
+    }
+    else {
+        document.writeln("You are in the home page.");
+    }
+</script>
